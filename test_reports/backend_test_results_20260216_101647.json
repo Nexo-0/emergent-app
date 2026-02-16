@@ -1,0 +1,1485 @@
+{
+  "timestamp": "2026-02-16T10:16:47.174810",
+  "summary": {
+    "total_tests": 13,
+    "passed_tests": 13,
+    "success_rate": 100.0
+  },
+  "test_results": [
+    {
+      "test_name": "API Root",
+      "method": "GET",
+      "endpoint": "",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_time": 0.236302,
+      "url": "https://design-rebuild-4.preview.emergentagent.com/api/",
+      "response_data": {
+        "message": "Kiosk System API Ready"
+      }
+    },
+    {
+      "test_name": "Get Categories",
+      "method": "GET",
+      "endpoint": "categories",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_time": 0.121246,
+      "url": "https://design-rebuild-4.preview.emergentagent.com/api/categories",
+      "response_data": [
+        {
+          "id": "9ae8d6a7-f88f-490a-9980-f9bed93f0147",
+          "name": "Fast Food",
+          "description": "Burgers, fries, and hot sandwiches",
+          "image_url": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwxfHxidXJnZXJ8ZW58MHx8fHwxNzcxMjM2MzQ3fDA&ixlib=rb-4.1.0&q=85",
+          "display_order": 1,
+          "active": true
+        },
+        {
+          "id": "059642d5-06ce-499f-8d9c-e27a59b2e76b",
+          "name": "Beverages",
+          "description": "Coffee, soft drinks, and juices",
+          "image_url": "https://images.unsplash.com/photo-1511920170033-f8396924c348?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHw0fHxjb2ZmZWV8ZW58MHx8fHwxNzcxMjM2MzUwfDA&ixlib=rb-4.1.0&q=85",
+          "display_order": 2,
+          "active": true
+        },
+        {
+          "id": "979a562e-1753-43e8-acfa-9c9319635d31",
+          "name": "Snacks",
+          "description": "Chips, candy, and quick bites",
+          "image_url": "https://images.unsplash.com/photo-1599490659213-e2b9527bd087?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODR8MHwxfHNlYXJjaHwyfHxjaGlwc3xlbnwwfHx8fDE3NzEyMzYzNTR8MA&ixlib=rb-4.1.0&q=85",
+          "display_order": 3,
+          "active": true
+        },
+        {
+          "id": "f60621b1-8fa2-43a5-9730-be90721cd3d8",
+          "name": "Electronics",
+          "description": "Headphones, chargers, and accessories",
+          "image_url": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwzfHxoZWFkcGhvbmVzfGVufDB8fHx8MTc3MTIzNjM1OHww&ixlib=rb-4.1.0&q=85",
+          "display_order": 4,
+          "active": true
+        },
+        {
+          "id": "8cd80295-6a69-472a-a6cf-4c30c46ce9d3",
+          "name": "Personal Care",
+          "description": "Toiletries and hygiene products",
+          "image_url": "https://images.unsplash.com/photo-1622866027662-14e3c5ee67e7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwyfHx0b2lsZXRyaWVzfGVufDB8fHx8MTc3MTIzNjM2M3ww&ixlib=rb-4.1.0&q=85",
+          "display_order": 5,
+          "active": true
+        },
+        {
+          "id": "b79d498d-e49f-4ffe-a098-9508d3999408",
+          "name": "Breakfast",
+          "description": "Pastries, bagels, and morning favorites",
+          "image_url": "https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwzfHxwYXN0cnl8ZW58MHx8fHwxNzcxMjM2MzY3fDA&ixlib=rb-4.1.0&q=85",
+          "display_order": 6,
+          "active": true
+        }
+      ]
+    },
+    {
+      "test_name": "Get All Products",
+      "method": "GET",
+      "endpoint": "products",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_time": 0.101437,
+      "url": "https://design-rebuild-4.preview.emergentagent.com/api/products",
+      "response_data": [
+        {
+          "id": "f828db74-41a9-46f6-9ae1-c7d09ba8b747",
+          "name": "Classic Burger",
+          "description": "Beef patty with lettuce, tomato, and cheese",
+          "price": 8.99,
+          "category_id": "9ae8d6a7-f88f-490a-9980-f9bed93f0147",
+          "image_url": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwxfHxidXJnZXJ8ZW58MHx8fHwxNzcxMjM2MzQ3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "1b1a7ce4-285c-41d5-8efa-ffa1f4ec6267",
+          "name": "Cheeseburger",
+          "description": "Double cheese with special sauce",
+          "price": 9.99,
+          "category_id": "9ae8d6a7-f88f-490a-9980-f9bed93f0147",
+          "image_url": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwzfHxidXJnZXJ8ZW58MHx8fHwxNzcxMjM2MzQ3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "31d0fbde-134c-4a38-9b78-fc09441fe0a3",
+          "name": "Veggie Burger",
+          "description": "Plant-based patty with fresh vegetables",
+          "price": 8.49,
+          "category_id": "9ae8d6a7-f88f-490a-9980-f9bed93f0147",
+          "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHw0fHxidXJnZXJ8ZW58MHx8fHwxNzcxMjM2MzQ3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "b0ea552c-8b33-4f5e-8bd7-1ca9bad0752d",
+          "name": "Chicken Sandwich",
+          "description": "Crispy chicken with mayo and pickles",
+          "price": 7.99,
+          "category_id": "9ae8d6a7-f88f-490a-9980-f9bed93f0147",
+          "image_url": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwyfHxidXJnZXJ8ZW58MHx8fHwxNzcxMjM2MzQ3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "f1da9500-1d51-4a49-8dd2-2ff5df3d4f40",
+          "name": "French Fries",
+          "description": "Crispy golden fries with sea salt",
+          "price": 3.99,
+          "category_id": "9ae8d6a7-f88f-490a-9980-f9bed93f0147",
+          "image_url": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwxfHxidXJnZXJ8ZW58MHx8fHwxNzcxMjM2MzQ3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "dc9e3723-9c58-420b-a506-d669dffe25d7",
+          "name": "Premium Coffee",
+          "description": "Freshly brewed arabica coffee",
+          "price": 3.49,
+          "category_id": "059642d5-06ce-499f-8d9c-e27a59b2e76b",
+          "image_url": "https://images.unsplash.com/photo-1511920170033-f8396924c348?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHw0fHxjb2ZmZWV8ZW58MHx8fHwxNzcxMjM2MzUwfDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "3ba26486-dc86-49ad-b001-98b4b02b0102",
+          "name": "Latte",
+          "description": "Espresso with steamed milk",
+          "price": 4.49,
+          "category_id": "059642d5-06ce-499f-8d9c-e27a59b2e76b",
+          "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwyfHxjb2ZmZWV8ZW58MHx8fHwxNzcxMjM2MzUwfDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "cd6bec7a-e9c3-4ee8-953a-aaa9b310c956",
+          "name": "Cola",
+          "description": "Classic carbonated soft drink",
+          "price": 2.49,
+          "category_id": "059642d5-06ce-499f-8d9c-e27a59b2e76b",
+          "image_url": "https://images.unsplash.com/photo-1625740822008-e45abf4e01d5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwyfHxzb2Z0JTIwZHJpbmtzfGVufDB8fHx8MTc3MTIzNjM3MXww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "d47abb59-be84-450e-a3d6-a7b9b5aa69cf",
+          "name": "Orange Juice",
+          "description": "Freshly squeezed orange juice",
+          "price": 3.99,
+          "category_id": "059642d5-06ce-499f-8d9c-e27a59b2e76b",
+          "image_url": "https://images.unsplash.com/photo-1527960471264-932f39eb5846?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwxfHxzb2Z0JTIwZHJpbmtzfGVufDB8fHx8MTc3MTIzNjM3MXww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "62107edb-0702-448d-9862-bdc2f3ed8669",
+          "name": "Iced Tea",
+          "description": "Refreshing lemon iced tea",
+          "price": 2.99,
+          "category_id": "059642d5-06ce-499f-8d9c-e27a59b2e76b",
+          "image_url": "https://images.unsplash.com/photo-1511920170033-f8396924c348?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHw0fHxjb2ZmZWV8ZW58MHx8fHwxNzcxMjM2MzUwfDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "5f6a55cf-2629-4871-82a2-8a58285ce4ad",
+          "name": "Potato Chips",
+          "description": "Classic salted potato chips",
+          "price": 2.49,
+          "category_id": "979a562e-1753-43e8-acfa-9c9319635d31",
+          "image_url": "https://images.unsplash.com/photo-1599490659213-e2b9527bd087?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODR8MHwxfHNlYXJjaHwyfHxjaGlwc3xlbnwwfHx8fDE3NzEyMzYzNTR8MA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "828cb703-f82f-457d-b19c-0cb1e202e5a0",
+          "name": "Tortilla Chips",
+          "description": "Crispy corn tortilla chips",
+          "price": 2.99,
+          "category_id": "979a562e-1753-43e8-acfa-9c9319635d31",
+          "image_url": "https://images.unsplash.com/photo-1613919113640-25732ec5e61f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODR8MHwxfHNlYXJjaHwxfHxjaGlwc3xlbnwwfHx8fDE3NzEyMzYzNTR8MA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "b9f4e549-76d7-4644-b7eb-188cedca22aa",
+          "name": "Cheese Puffs",
+          "description": "Cheesy flavored snack puffs",
+          "price": 2.29,
+          "category_id": "979a562e-1753-43e8-acfa-9c9319635d31",
+          "image_url": "https://images.unsplash.com/photo-1617102738820-bee2545405fd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODR8MHwxfHNlYXJjaHwzfHxjaGlwc3xlbnwwfHx8fDE3NzEyMzYzNTR8MA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "e4a55575-b76c-4c0e-a693-71cd8e30f230",
+          "name": "Candy Bar",
+          "description": "Chocolate and caramel candy bar",
+          "price": 1.99,
+          "category_id": "979a562e-1753-43e8-acfa-9c9319635d31",
+          "image_url": "https://images.unsplash.com/photo-1599490659213-e2b9527bd087?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODR8MHwxfHNlYXJjaHwyfHxjaGlwc3xlbnwwfHx8fDE3NzEyMzYzNTR8MA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "064f20db-2c01-491a-bff6-fa6aadf5a215",
+          "name": "Wireless Headphones",
+          "description": "Bluetooth over-ear headphones",
+          "price": 49.99,
+          "category_id": "f60621b1-8fa2-43a5-9730-be90721cd3d8",
+          "image_url": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwzfHxoZWFkcGhvbmVzfGVufDB8fHx8MTc3MTIzNjM1OHww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "3209ff4e-9ade-4b96-b183-6f67b8ba83ac",
+          "name": "Earbuds",
+          "description": "Compact wireless earbuds",
+          "price": 29.99,
+          "category_id": "f60621b1-8fa2-43a5-9730-be90721cd3d8",
+          "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwxfHxoZWFkcGhvbmVzfGVufDB8fHx8MTc3MTIzNjM1OHww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "21a2325e-4ee7-485d-95a0-e3a3ed16e730",
+          "name": "Phone Charger",
+          "description": "Fast charging USB-C cable",
+          "price": 14.99,
+          "category_id": "f60621b1-8fa2-43a5-9730-be90721cd3d8",
+          "image_url": "https://images.unsplash.com/photo-1725304382197-663ae3864750?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwzfHxwaG9uZSUyMGNoYXJnZXJ8ZW58MHx8fHwxNzcxMjM2Mzc1fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "28c35a93-7853-4e6c-9cf5-ab195abc394f",
+          "name": "Portable Speaker",
+          "description": "Bluetooth portable speaker",
+          "price": 39.99,
+          "category_id": "f60621b1-8fa2-43a5-9730-be90721cd3d8",
+          "image_url": "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwyfHxoZWFkcGhvbmVzfGVufDB8fHx8MTc3MTIzNjM1OHww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "0090ad89-f23d-4c94-b624-ec35222a65b5",
+          "name": "Hand Sanitizer",
+          "description": "Antibacterial hand sanitizer gel",
+          "price": 3.99,
+          "category_id": "8cd80295-6a69-472a-a6cf-4c30c46ce9d3",
+          "image_url": "https://images.unsplash.com/photo-1622866027662-14e3c5ee67e7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwyfHx0b2lsZXRyaWVzfGVufDB8fHx8MTc3MTIzNjM2M3ww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "8c6eaa9f-07f4-4943-8d49-1ba86a6e8b8a",
+          "name": "Toothbrush Kit",
+          "description": "Travel toothbrush with toothpaste",
+          "price": 5.99,
+          "category_id": "8cd80295-6a69-472a-a6cf-4c30c46ce9d3",
+          "image_url": "https://images.unsplash.com/photo-1603990103103-baf3ada7af1c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwxfHx0b2lsZXRyaWVzfGVufDB8fHx8MTc3MTIzNjM2M3ww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "f90fdef8-0bde-43e9-bf09-63204008ed15",
+          "name": "Face Wipes",
+          "description": "Refreshing cleansing wipes",
+          "price": 4.49,
+          "category_id": "8cd80295-6a69-472a-a6cf-4c30c46ce9d3",
+          "image_url": "https://images.unsplash.com/photo-1622866027662-14e3c5ee67e7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwyfHx0b2lsZXRyaWVzfGVufDB8fHx8MTc3MTIzNjM2M3ww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "0e204fe7-2bf3-4c64-ae27-a1be4c5898bf",
+          "name": "Deodorant",
+          "description": "24-hour protection deodorant",
+          "price": 6.99,
+          "category_id": "8cd80295-6a69-472a-a6cf-4c30c46ce9d3",
+          "image_url": "https://images.unsplash.com/photo-1603990103103-baf3ada7af1c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwxfHx0b2lsZXRyaWVzfGVufDB8fHx8MTc3MTIzNjM2M3ww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "f1e652d0-d99d-442f-9905-c7e655395198",
+          "name": "Croissant",
+          "description": "Buttery flaky croissant",
+          "price": 3.49,
+          "category_id": "b79d498d-e49f-4ffe-a098-9508d3999408",
+          "image_url": "https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwzfHxwYXN0cnl8ZW58MHx8fHwxNzcxMjM2MzY3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "39151054-faa2-4575-a14d-734a774208a7",
+          "name": "Blueberry Muffin",
+          "description": "Fresh baked blueberry muffin",
+          "price": 2.99,
+          "category_id": "b79d498d-e49f-4ffe-a098-9508d3999408",
+          "image_url": "https://images.unsplash.com/photo-1620980776848-84ac10194945?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHw0fHxwYXN0cnl8ZW58MHx8fHwxNzcxMjM2MzY3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "40710e9b-8d8f-403f-934f-e406004d46ea",
+          "name": "Bagel",
+          "description": "Plain bagel with cream cheese",
+          "price": 3.99,
+          "category_id": "b79d498d-e49f-4ffe-a098-9508d3999408",
+          "image_url": "https://images.unsplash.com/photo-1623334044303-241021148842?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwxfHxwYXN0cnl8ZW58MHx8fHwxNzcxMjM2MzY3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "f72273e5-43c3-4011-bde4-fb08f597741b",
+          "name": "Danish Pastry",
+          "description": "Sweet fruit-filled danish",
+          "price": 3.29,
+          "category_id": "b79d498d-e49f-4ffe-a098-9508d3999408",
+          "image_url": "https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwzfHxwYXN0cnl8ZW58MHx8fHwxNzcxMjM2MzY3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        }
+      ]
+    },
+    {
+      "test_name": "Get Categories for Product Filter",
+      "method": "GET",
+      "endpoint": "categories",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_time": 0.122203,
+      "url": "https://design-rebuild-4.preview.emergentagent.com/api/categories",
+      "response_data": [
+        {
+          "id": "9ae8d6a7-f88f-490a-9980-f9bed93f0147",
+          "name": "Fast Food",
+          "description": "Burgers, fries, and hot sandwiches",
+          "image_url": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwxfHxidXJnZXJ8ZW58MHx8fHwxNzcxMjM2MzQ3fDA&ixlib=rb-4.1.0&q=85",
+          "display_order": 1,
+          "active": true
+        },
+        {
+          "id": "059642d5-06ce-499f-8d9c-e27a59b2e76b",
+          "name": "Beverages",
+          "description": "Coffee, soft drinks, and juices",
+          "image_url": "https://images.unsplash.com/photo-1511920170033-f8396924c348?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHw0fHxjb2ZmZWV8ZW58MHx8fHwxNzcxMjM2MzUwfDA&ixlib=rb-4.1.0&q=85",
+          "display_order": 2,
+          "active": true
+        },
+        {
+          "id": "979a562e-1753-43e8-acfa-9c9319635d31",
+          "name": "Snacks",
+          "description": "Chips, candy, and quick bites",
+          "image_url": "https://images.unsplash.com/photo-1599490659213-e2b9527bd087?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODR8MHwxfHNlYXJjaHwyfHxjaGlwc3xlbnwwfHx8fDE3NzEyMzYzNTR8MA&ixlib=rb-4.1.0&q=85",
+          "display_order": 3,
+          "active": true
+        },
+        {
+          "id": "f60621b1-8fa2-43a5-9730-be90721cd3d8",
+          "name": "Electronics",
+          "description": "Headphones, chargers, and accessories",
+          "image_url": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwzfHxoZWFkcGhvbmVzfGVufDB8fHx8MTc3MTIzNjM1OHww&ixlib=rb-4.1.0&q=85",
+          "display_order": 4,
+          "active": true
+        },
+        {
+          "id": "8cd80295-6a69-472a-a6cf-4c30c46ce9d3",
+          "name": "Personal Care",
+          "description": "Toiletries and hygiene products",
+          "image_url": "https://images.unsplash.com/photo-1622866027662-14e3c5ee67e7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwyfHx0b2lsZXRyaWVzfGVufDB8fHx8MTc3MTIzNjM2M3ww&ixlib=rb-4.1.0&q=85",
+          "display_order": 5,
+          "active": true
+        },
+        {
+          "id": "b79d498d-e49f-4ffe-a098-9508d3999408",
+          "name": "Breakfast",
+          "description": "Pastries, bagels, and morning favorites",
+          "image_url": "https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwzfHxwYXN0cnl8ZW58MHx8fHwxNzcxMjM2MzY3fDA&ixlib=rb-4.1.0&q=85",
+          "display_order": 6,
+          "active": true
+        }
+      ]
+    },
+    {
+      "test_name": "Get Products for Fast Food",
+      "method": "GET",
+      "endpoint": "products",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_time": 0.527255,
+      "url": "https://design-rebuild-4.preview.emergentagent.com/api/products",
+      "response_data": [
+        {
+          "id": "f828db74-41a9-46f6-9ae1-c7d09ba8b747",
+          "name": "Classic Burger",
+          "description": "Beef patty with lettuce, tomato, and cheese",
+          "price": 8.99,
+          "category_id": "9ae8d6a7-f88f-490a-9980-f9bed93f0147",
+          "image_url": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwxfHxidXJnZXJ8ZW58MHx8fHwxNzcxMjM2MzQ3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "1b1a7ce4-285c-41d5-8efa-ffa1f4ec6267",
+          "name": "Cheeseburger",
+          "description": "Double cheese with special sauce",
+          "price": 9.99,
+          "category_id": "9ae8d6a7-f88f-490a-9980-f9bed93f0147",
+          "image_url": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwzfHxidXJnZXJ8ZW58MHx8fHwxNzcxMjM2MzQ3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "31d0fbde-134c-4a38-9b78-fc09441fe0a3",
+          "name": "Veggie Burger",
+          "description": "Plant-based patty with fresh vegetables",
+          "price": 8.49,
+          "category_id": "9ae8d6a7-f88f-490a-9980-f9bed93f0147",
+          "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHw0fHxidXJnZXJ8ZW58MHx8fHwxNzcxMjM2MzQ3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "b0ea552c-8b33-4f5e-8bd7-1ca9bad0752d",
+          "name": "Chicken Sandwich",
+          "description": "Crispy chicken with mayo and pickles",
+          "price": 7.99,
+          "category_id": "9ae8d6a7-f88f-490a-9980-f9bed93f0147",
+          "image_url": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwyfHxidXJnZXJ8ZW58MHx8fHwxNzcxMjM2MzQ3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "f1da9500-1d51-4a49-8dd2-2ff5df3d4f40",
+          "name": "French Fries",
+          "description": "Crispy golden fries with sea salt",
+          "price": 3.99,
+          "category_id": "9ae8d6a7-f88f-490a-9980-f9bed93f0147",
+          "image_url": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwxfHxidXJnZXJ8ZW58MHx8fHwxNzcxMjM2MzQ3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        }
+      ]
+    },
+    {
+      "test_name": "Get Products for Single Product Test",
+      "method": "GET",
+      "endpoint": "products",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_time": 0.099998,
+      "url": "https://design-rebuild-4.preview.emergentagent.com/api/products",
+      "response_data": [
+        {
+          "id": "f828db74-41a9-46f6-9ae1-c7d09ba8b747",
+          "name": "Classic Burger",
+          "description": "Beef patty with lettuce, tomato, and cheese",
+          "price": 8.99,
+          "category_id": "9ae8d6a7-f88f-490a-9980-f9bed93f0147",
+          "image_url": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwxfHxidXJnZXJ8ZW58MHx8fHwxNzcxMjM2MzQ3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "1b1a7ce4-285c-41d5-8efa-ffa1f4ec6267",
+          "name": "Cheeseburger",
+          "description": "Double cheese with special sauce",
+          "price": 9.99,
+          "category_id": "9ae8d6a7-f88f-490a-9980-f9bed93f0147",
+          "image_url": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwzfHxidXJnZXJ8ZW58MHx8fHwxNzcxMjM2MzQ3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "31d0fbde-134c-4a38-9b78-fc09441fe0a3",
+          "name": "Veggie Burger",
+          "description": "Plant-based patty with fresh vegetables",
+          "price": 8.49,
+          "category_id": "9ae8d6a7-f88f-490a-9980-f9bed93f0147",
+          "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHw0fHxidXJnZXJ8ZW58MHx8fHwxNzcxMjM2MzQ3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "b0ea552c-8b33-4f5e-8bd7-1ca9bad0752d",
+          "name": "Chicken Sandwich",
+          "description": "Crispy chicken with mayo and pickles",
+          "price": 7.99,
+          "category_id": "9ae8d6a7-f88f-490a-9980-f9bed93f0147",
+          "image_url": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwyfHxidXJnZXJ8ZW58MHx8fHwxNzcxMjM2MzQ3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "f1da9500-1d51-4a49-8dd2-2ff5df3d4f40",
+          "name": "French Fries",
+          "description": "Crispy golden fries with sea salt",
+          "price": 3.99,
+          "category_id": "9ae8d6a7-f88f-490a-9980-f9bed93f0147",
+          "image_url": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwxfHxidXJnZXJ8ZW58MHx8fHwxNzcxMjM2MzQ3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "dc9e3723-9c58-420b-a506-d669dffe25d7",
+          "name": "Premium Coffee",
+          "description": "Freshly brewed arabica coffee",
+          "price": 3.49,
+          "category_id": "059642d5-06ce-499f-8d9c-e27a59b2e76b",
+          "image_url": "https://images.unsplash.com/photo-1511920170033-f8396924c348?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHw0fHxjb2ZmZWV8ZW58MHx8fHwxNzcxMjM2MzUwfDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "3ba26486-dc86-49ad-b001-98b4b02b0102",
+          "name": "Latte",
+          "description": "Espresso with steamed milk",
+          "price": 4.49,
+          "category_id": "059642d5-06ce-499f-8d9c-e27a59b2e76b",
+          "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwyfHxjb2ZmZWV8ZW58MHx8fHwxNzcxMjM2MzUwfDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "cd6bec7a-e9c3-4ee8-953a-aaa9b310c956",
+          "name": "Cola",
+          "description": "Classic carbonated soft drink",
+          "price": 2.49,
+          "category_id": "059642d5-06ce-499f-8d9c-e27a59b2e76b",
+          "image_url": "https://images.unsplash.com/photo-1625740822008-e45abf4e01d5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwyfHxzb2Z0JTIwZHJpbmtzfGVufDB8fHx8MTc3MTIzNjM3MXww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "d47abb59-be84-450e-a3d6-a7b9b5aa69cf",
+          "name": "Orange Juice",
+          "description": "Freshly squeezed orange juice",
+          "price": 3.99,
+          "category_id": "059642d5-06ce-499f-8d9c-e27a59b2e76b",
+          "image_url": "https://images.unsplash.com/photo-1527960471264-932f39eb5846?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwxfHxzb2Z0JTIwZHJpbmtzfGVufDB8fHx8MTc3MTIzNjM3MXww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "62107edb-0702-448d-9862-bdc2f3ed8669",
+          "name": "Iced Tea",
+          "description": "Refreshing lemon iced tea",
+          "price": 2.99,
+          "category_id": "059642d5-06ce-499f-8d9c-e27a59b2e76b",
+          "image_url": "https://images.unsplash.com/photo-1511920170033-f8396924c348?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHw0fHxjb2ZmZWV8ZW58MHx8fHwxNzcxMjM2MzUwfDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "5f6a55cf-2629-4871-82a2-8a58285ce4ad",
+          "name": "Potato Chips",
+          "description": "Classic salted potato chips",
+          "price": 2.49,
+          "category_id": "979a562e-1753-43e8-acfa-9c9319635d31",
+          "image_url": "https://images.unsplash.com/photo-1599490659213-e2b9527bd087?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODR8MHwxfHNlYXJjaHwyfHxjaGlwc3xlbnwwfHx8fDE3NzEyMzYzNTR8MA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "828cb703-f82f-457d-b19c-0cb1e202e5a0",
+          "name": "Tortilla Chips",
+          "description": "Crispy corn tortilla chips",
+          "price": 2.99,
+          "category_id": "979a562e-1753-43e8-acfa-9c9319635d31",
+          "image_url": "https://images.unsplash.com/photo-1613919113640-25732ec5e61f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODR8MHwxfHNlYXJjaHwxfHxjaGlwc3xlbnwwfHx8fDE3NzEyMzYzNTR8MA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "b9f4e549-76d7-4644-b7eb-188cedca22aa",
+          "name": "Cheese Puffs",
+          "description": "Cheesy flavored snack puffs",
+          "price": 2.29,
+          "category_id": "979a562e-1753-43e8-acfa-9c9319635d31",
+          "image_url": "https://images.unsplash.com/photo-1617102738820-bee2545405fd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODR8MHwxfHNlYXJjaHwzfHxjaGlwc3xlbnwwfHx8fDE3NzEyMzYzNTR8MA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "e4a55575-b76c-4c0e-a693-71cd8e30f230",
+          "name": "Candy Bar",
+          "description": "Chocolate and caramel candy bar",
+          "price": 1.99,
+          "category_id": "979a562e-1753-43e8-acfa-9c9319635d31",
+          "image_url": "https://images.unsplash.com/photo-1599490659213-e2b9527bd087?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODR8MHwxfHNlYXJjaHwyfHxjaGlwc3xlbnwwfHx8fDE3NzEyMzYzNTR8MA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "064f20db-2c01-491a-bff6-fa6aadf5a215",
+          "name": "Wireless Headphones",
+          "description": "Bluetooth over-ear headphones",
+          "price": 49.99,
+          "category_id": "f60621b1-8fa2-43a5-9730-be90721cd3d8",
+          "image_url": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwzfHxoZWFkcGhvbmVzfGVufDB8fHx8MTc3MTIzNjM1OHww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "3209ff4e-9ade-4b96-b183-6f67b8ba83ac",
+          "name": "Earbuds",
+          "description": "Compact wireless earbuds",
+          "price": 29.99,
+          "category_id": "f60621b1-8fa2-43a5-9730-be90721cd3d8",
+          "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwxfHxoZWFkcGhvbmVzfGVufDB8fHx8MTc3MTIzNjM1OHww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "21a2325e-4ee7-485d-95a0-e3a3ed16e730",
+          "name": "Phone Charger",
+          "description": "Fast charging USB-C cable",
+          "price": 14.99,
+          "category_id": "f60621b1-8fa2-43a5-9730-be90721cd3d8",
+          "image_url": "https://images.unsplash.com/photo-1725304382197-663ae3864750?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwzfHxwaG9uZSUyMGNoYXJnZXJ8ZW58MHx8fHwxNzcxMjM2Mzc1fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "28c35a93-7853-4e6c-9cf5-ab195abc394f",
+          "name": "Portable Speaker",
+          "description": "Bluetooth portable speaker",
+          "price": 39.99,
+          "category_id": "f60621b1-8fa2-43a5-9730-be90721cd3d8",
+          "image_url": "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwyfHxoZWFkcGhvbmVzfGVufDB8fHx8MTc3MTIzNjM1OHww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "0090ad89-f23d-4c94-b624-ec35222a65b5",
+          "name": "Hand Sanitizer",
+          "description": "Antibacterial hand sanitizer gel",
+          "price": 3.99,
+          "category_id": "8cd80295-6a69-472a-a6cf-4c30c46ce9d3",
+          "image_url": "https://images.unsplash.com/photo-1622866027662-14e3c5ee67e7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwyfHx0b2lsZXRyaWVzfGVufDB8fHx8MTc3MTIzNjM2M3ww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "8c6eaa9f-07f4-4943-8d49-1ba86a6e8b8a",
+          "name": "Toothbrush Kit",
+          "description": "Travel toothbrush with toothpaste",
+          "price": 5.99,
+          "category_id": "8cd80295-6a69-472a-a6cf-4c30c46ce9d3",
+          "image_url": "https://images.unsplash.com/photo-1603990103103-baf3ada7af1c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwxfHx0b2lsZXRyaWVzfGVufDB8fHx8MTc3MTIzNjM2M3ww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "f90fdef8-0bde-43e9-bf09-63204008ed15",
+          "name": "Face Wipes",
+          "description": "Refreshing cleansing wipes",
+          "price": 4.49,
+          "category_id": "8cd80295-6a69-472a-a6cf-4c30c46ce9d3",
+          "image_url": "https://images.unsplash.com/photo-1622866027662-14e3c5ee67e7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwyfHx0b2lsZXRyaWVzfGVufDB8fHx8MTc3MTIzNjM2M3ww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "0e204fe7-2bf3-4c64-ae27-a1be4c5898bf",
+          "name": "Deodorant",
+          "description": "24-hour protection deodorant",
+          "price": 6.99,
+          "category_id": "8cd80295-6a69-472a-a6cf-4c30c46ce9d3",
+          "image_url": "https://images.unsplash.com/photo-1603990103103-baf3ada7af1c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwxfHx0b2lsZXRyaWVzfGVufDB8fHx8MTc3MTIzNjM2M3ww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "f1e652d0-d99d-442f-9905-c7e655395198",
+          "name": "Croissant",
+          "description": "Buttery flaky croissant",
+          "price": 3.49,
+          "category_id": "b79d498d-e49f-4ffe-a098-9508d3999408",
+          "image_url": "https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwzfHxwYXN0cnl8ZW58MHx8fHwxNzcxMjM2MzY3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "39151054-faa2-4575-a14d-734a774208a7",
+          "name": "Blueberry Muffin",
+          "description": "Fresh baked blueberry muffin",
+          "price": 2.99,
+          "category_id": "b79d498d-e49f-4ffe-a098-9508d3999408",
+          "image_url": "https://images.unsplash.com/photo-1620980776848-84ac10194945?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHw0fHxwYXN0cnl8ZW58MHx8fHwxNzcxMjM2MzY3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "40710e9b-8d8f-403f-934f-e406004d46ea",
+          "name": "Bagel",
+          "description": "Plain bagel with cream cheese",
+          "price": 3.99,
+          "category_id": "b79d498d-e49f-4ffe-a098-9508d3999408",
+          "image_url": "https://images.unsplash.com/photo-1623334044303-241021148842?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwxfHxwYXN0cnl8ZW58MHx8fHwxNzcxMjM2MzY3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "f72273e5-43c3-4011-bde4-fb08f597741b",
+          "name": "Danish Pastry",
+          "description": "Sweet fruit-filled danish",
+          "price": 3.29,
+          "category_id": "b79d498d-e49f-4ffe-a098-9508d3999408",
+          "image_url": "https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwzfHxwYXN0cnl8ZW58MHx8fHwxNzcxMjM2MzY3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        }
+      ]
+    },
+    {
+      "test_name": "Get Single Product (Classic Burger)",
+      "method": "GET",
+      "endpoint": "products/f828db74-41a9-46f6-9ae1-c7d09ba8b747",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_time": 0.150169,
+      "url": "https://design-rebuild-4.preview.emergentagent.com/api/products/f828db74-41a9-46f6-9ae1-c7d09ba8b747",
+      "response_data": {
+        "id": "f828db74-41a9-46f6-9ae1-c7d09ba8b747",
+        "name": "Classic Burger",
+        "description": "Beef patty with lettuce, tomato, and cheese",
+        "price": 8.99,
+        "category_id": "9ae8d6a7-f88f-490a-9980-f9bed93f0147",
+        "image_url": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwxfHxidXJnZXJ8ZW58MHx8fHwxNzcxMjM2MzQ3fDA&ixlib=rb-4.1.0&q=85",
+        "in_stock": true,
+        "active": true
+      }
+    },
+    {
+      "test_name": "Get Products for Order Creation",
+      "method": "GET",
+      "endpoint": "products",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_time": 0.104605,
+      "url": "https://design-rebuild-4.preview.emergentagent.com/api/products",
+      "response_data": [
+        {
+          "id": "f828db74-41a9-46f6-9ae1-c7d09ba8b747",
+          "name": "Classic Burger",
+          "description": "Beef patty with lettuce, tomato, and cheese",
+          "price": 8.99,
+          "category_id": "9ae8d6a7-f88f-490a-9980-f9bed93f0147",
+          "image_url": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwxfHxidXJnZXJ8ZW58MHx8fHwxNzcxMjM2MzQ3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "1b1a7ce4-285c-41d5-8efa-ffa1f4ec6267",
+          "name": "Cheeseburger",
+          "description": "Double cheese with special sauce",
+          "price": 9.99,
+          "category_id": "9ae8d6a7-f88f-490a-9980-f9bed93f0147",
+          "image_url": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwzfHxidXJnZXJ8ZW58MHx8fHwxNzcxMjM2MzQ3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "31d0fbde-134c-4a38-9b78-fc09441fe0a3",
+          "name": "Veggie Burger",
+          "description": "Plant-based patty with fresh vegetables",
+          "price": 8.49,
+          "category_id": "9ae8d6a7-f88f-490a-9980-f9bed93f0147",
+          "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHw0fHxidXJnZXJ8ZW58MHx8fHwxNzcxMjM2MzQ3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "b0ea552c-8b33-4f5e-8bd7-1ca9bad0752d",
+          "name": "Chicken Sandwich",
+          "description": "Crispy chicken with mayo and pickles",
+          "price": 7.99,
+          "category_id": "9ae8d6a7-f88f-490a-9980-f9bed93f0147",
+          "image_url": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwyfHxidXJnZXJ8ZW58MHx8fHwxNzcxMjM2MzQ3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "f1da9500-1d51-4a49-8dd2-2ff5df3d4f40",
+          "name": "French Fries",
+          "description": "Crispy golden fries with sea salt",
+          "price": 3.99,
+          "category_id": "9ae8d6a7-f88f-490a-9980-f9bed93f0147",
+          "image_url": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwxfHxidXJnZXJ8ZW58MHx8fHwxNzcxMjM2MzQ3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "dc9e3723-9c58-420b-a506-d669dffe25d7",
+          "name": "Premium Coffee",
+          "description": "Freshly brewed arabica coffee",
+          "price": 3.49,
+          "category_id": "059642d5-06ce-499f-8d9c-e27a59b2e76b",
+          "image_url": "https://images.unsplash.com/photo-1511920170033-f8396924c348?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHw0fHxjb2ZmZWV8ZW58MHx8fHwxNzcxMjM2MzUwfDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "3ba26486-dc86-49ad-b001-98b4b02b0102",
+          "name": "Latte",
+          "description": "Espresso with steamed milk",
+          "price": 4.49,
+          "category_id": "059642d5-06ce-499f-8d9c-e27a59b2e76b",
+          "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwyfHxjb2ZmZWV8ZW58MHx8fHwxNzcxMjM2MzUwfDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "cd6bec7a-e9c3-4ee8-953a-aaa9b310c956",
+          "name": "Cola",
+          "description": "Classic carbonated soft drink",
+          "price": 2.49,
+          "category_id": "059642d5-06ce-499f-8d9c-e27a59b2e76b",
+          "image_url": "https://images.unsplash.com/photo-1625740822008-e45abf4e01d5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwyfHxzb2Z0JTIwZHJpbmtzfGVufDB8fHx8MTc3MTIzNjM3MXww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "d47abb59-be84-450e-a3d6-a7b9b5aa69cf",
+          "name": "Orange Juice",
+          "description": "Freshly squeezed orange juice",
+          "price": 3.99,
+          "category_id": "059642d5-06ce-499f-8d9c-e27a59b2e76b",
+          "image_url": "https://images.unsplash.com/photo-1527960471264-932f39eb5846?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwxfHxzb2Z0JTIwZHJpbmtzfGVufDB8fHx8MTc3MTIzNjM3MXww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "62107edb-0702-448d-9862-bdc2f3ed8669",
+          "name": "Iced Tea",
+          "description": "Refreshing lemon iced tea",
+          "price": 2.99,
+          "category_id": "059642d5-06ce-499f-8d9c-e27a59b2e76b",
+          "image_url": "https://images.unsplash.com/photo-1511920170033-f8396924c348?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHw0fHxjb2ZmZWV8ZW58MHx8fHwxNzcxMjM2MzUwfDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "5f6a55cf-2629-4871-82a2-8a58285ce4ad",
+          "name": "Potato Chips",
+          "description": "Classic salted potato chips",
+          "price": 2.49,
+          "category_id": "979a562e-1753-43e8-acfa-9c9319635d31",
+          "image_url": "https://images.unsplash.com/photo-1599490659213-e2b9527bd087?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODR8MHwxfHNlYXJjaHwyfHxjaGlwc3xlbnwwfHx8fDE3NzEyMzYzNTR8MA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "828cb703-f82f-457d-b19c-0cb1e202e5a0",
+          "name": "Tortilla Chips",
+          "description": "Crispy corn tortilla chips",
+          "price": 2.99,
+          "category_id": "979a562e-1753-43e8-acfa-9c9319635d31",
+          "image_url": "https://images.unsplash.com/photo-1613919113640-25732ec5e61f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODR8MHwxfHNlYXJjaHwxfHxjaGlwc3xlbnwwfHx8fDE3NzEyMzYzNTR8MA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "b9f4e549-76d7-4644-b7eb-188cedca22aa",
+          "name": "Cheese Puffs",
+          "description": "Cheesy flavored snack puffs",
+          "price": 2.29,
+          "category_id": "979a562e-1753-43e8-acfa-9c9319635d31",
+          "image_url": "https://images.unsplash.com/photo-1617102738820-bee2545405fd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODR8MHwxfHNlYXJjaHwzfHxjaGlwc3xlbnwwfHx8fDE3NzEyMzYzNTR8MA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "e4a55575-b76c-4c0e-a693-71cd8e30f230",
+          "name": "Candy Bar",
+          "description": "Chocolate and caramel candy bar",
+          "price": 1.99,
+          "category_id": "979a562e-1753-43e8-acfa-9c9319635d31",
+          "image_url": "https://images.unsplash.com/photo-1599490659213-e2b9527bd087?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODR8MHwxfHNlYXJjaHwyfHxjaGlwc3xlbnwwfHx8fDE3NzEyMzYzNTR8MA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "064f20db-2c01-491a-bff6-fa6aadf5a215",
+          "name": "Wireless Headphones",
+          "description": "Bluetooth over-ear headphones",
+          "price": 49.99,
+          "category_id": "f60621b1-8fa2-43a5-9730-be90721cd3d8",
+          "image_url": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwzfHxoZWFkcGhvbmVzfGVufDB8fHx8MTc3MTIzNjM1OHww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "3209ff4e-9ade-4b96-b183-6f67b8ba83ac",
+          "name": "Earbuds",
+          "description": "Compact wireless earbuds",
+          "price": 29.99,
+          "category_id": "f60621b1-8fa2-43a5-9730-be90721cd3d8",
+          "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwxfHxoZWFkcGhvbmVzfGVufDB8fHx8MTc3MTIzNjM1OHww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "21a2325e-4ee7-485d-95a0-e3a3ed16e730",
+          "name": "Phone Charger",
+          "description": "Fast charging USB-C cable",
+          "price": 14.99,
+          "category_id": "f60621b1-8fa2-43a5-9730-be90721cd3d8",
+          "image_url": "https://images.unsplash.com/photo-1725304382197-663ae3864750?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwzfHxwaG9uZSUyMGNoYXJnZXJ8ZW58MHx8fHwxNzcxMjM2Mzc1fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "28c35a93-7853-4e6c-9cf5-ab195abc394f",
+          "name": "Portable Speaker",
+          "description": "Bluetooth portable speaker",
+          "price": 39.99,
+          "category_id": "f60621b1-8fa2-43a5-9730-be90721cd3d8",
+          "image_url": "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwyfHxoZWFkcGhvbmVzfGVufDB8fHx8MTc3MTIzNjM1OHww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "0090ad89-f23d-4c94-b624-ec35222a65b5",
+          "name": "Hand Sanitizer",
+          "description": "Antibacterial hand sanitizer gel",
+          "price": 3.99,
+          "category_id": "8cd80295-6a69-472a-a6cf-4c30c46ce9d3",
+          "image_url": "https://images.unsplash.com/photo-1622866027662-14e3c5ee67e7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwyfHx0b2lsZXRyaWVzfGVufDB8fHx8MTc3MTIzNjM2M3ww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "8c6eaa9f-07f4-4943-8d49-1ba86a6e8b8a",
+          "name": "Toothbrush Kit",
+          "description": "Travel toothbrush with toothpaste",
+          "price": 5.99,
+          "category_id": "8cd80295-6a69-472a-a6cf-4c30c46ce9d3",
+          "image_url": "https://images.unsplash.com/photo-1603990103103-baf3ada7af1c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwxfHx0b2lsZXRyaWVzfGVufDB8fHx8MTc3MTIzNjM2M3ww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "f90fdef8-0bde-43e9-bf09-63204008ed15",
+          "name": "Face Wipes",
+          "description": "Refreshing cleansing wipes",
+          "price": 4.49,
+          "category_id": "8cd80295-6a69-472a-a6cf-4c30c46ce9d3",
+          "image_url": "https://images.unsplash.com/photo-1622866027662-14e3c5ee67e7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwyfHx0b2lsZXRyaWVzfGVufDB8fHx8MTc3MTIzNjM2M3ww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "0e204fe7-2bf3-4c64-ae27-a1be4c5898bf",
+          "name": "Deodorant",
+          "description": "24-hour protection deodorant",
+          "price": 6.99,
+          "category_id": "8cd80295-6a69-472a-a6cf-4c30c46ce9d3",
+          "image_url": "https://images.unsplash.com/photo-1603990103103-baf3ada7af1c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwxfHx0b2lsZXRyaWVzfGVufDB8fHx8MTc3MTIzNjM2M3ww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "f1e652d0-d99d-442f-9905-c7e655395198",
+          "name": "Croissant",
+          "description": "Buttery flaky croissant",
+          "price": 3.49,
+          "category_id": "b79d498d-e49f-4ffe-a098-9508d3999408",
+          "image_url": "https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwzfHxwYXN0cnl8ZW58MHx8fHwxNzcxMjM2MzY3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "39151054-faa2-4575-a14d-734a774208a7",
+          "name": "Blueberry Muffin",
+          "description": "Fresh baked blueberry muffin",
+          "price": 2.99,
+          "category_id": "b79d498d-e49f-4ffe-a098-9508d3999408",
+          "image_url": "https://images.unsplash.com/photo-1620980776848-84ac10194945?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHw0fHxwYXN0cnl8ZW58MHx8fHwxNzcxMjM2MzY3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "40710e9b-8d8f-403f-934f-e406004d46ea",
+          "name": "Bagel",
+          "description": "Plain bagel with cream cheese",
+          "price": 3.99,
+          "category_id": "b79d498d-e49f-4ffe-a098-9508d3999408",
+          "image_url": "https://images.unsplash.com/photo-1623334044303-241021148842?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwxfHxwYXN0cnl8ZW58MHx8fHwxNzcxMjM2MzY3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "f72273e5-43c3-4011-bde4-fb08f597741b",
+          "name": "Danish Pastry",
+          "description": "Sweet fruit-filled danish",
+          "price": 3.29,
+          "category_id": "b79d498d-e49f-4ffe-a098-9508d3999408",
+          "image_url": "https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwzfHxwYXN0cnl8ZW58MHx8fHwxNzcxMjM2MzY3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        }
+      ]
+    },
+    {
+      "test_name": "Create Order",
+      "method": "POST",
+      "endpoint": "orders",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_time": 0.097577,
+      "url": "https://design-rebuild-4.preview.emergentagent.com/api/orders",
+      "response_data": {
+        "id": "c8250f31-0146-4161-b999-e9b4a270a7b7",
+        "order_number": "ORD-A3E2B832",
+        "items": [
+          {
+            "product_id": "f828db74-41a9-46f6-9ae1-c7d09ba8b747",
+            "product_name": "Classic Burger",
+            "quantity": 2,
+            "unit_price": 8.99,
+            "total_price": 17.98
+          },
+          {
+            "product_id": "1b1a7ce4-285c-41d5-8efa-ffa1f4ec6267",
+            "product_name": "Cheeseburger",
+            "quantity": 1,
+            "unit_price": 9.99,
+            "total_price": 9.99
+          }
+        ],
+        "subtotal": 27.97,
+        "tax": 2.2376,
+        "total": 30.2076,
+        "payment_method": "card",
+        "status": "completed",
+        "timestamp": "2026-02-16T10:16:46.705595Z"
+      }
+    },
+    {
+      "test_name": "Get Order c8250f31...",
+      "method": "GET",
+      "endpoint": "orders/c8250f31-0146-4161-b999-e9b4a270a7b7",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_time": 0.111692,
+      "url": "https://design-rebuild-4.preview.emergentagent.com/api/orders/c8250f31-0146-4161-b999-e9b4a270a7b7",
+      "response_data": {
+        "id": "c8250f31-0146-4161-b999-e9b4a270a7b7",
+        "order_number": "ORD-A3E2B832",
+        "items": [
+          {
+            "product_id": "f828db74-41a9-46f6-9ae1-c7d09ba8b747",
+            "product_name": "Classic Burger",
+            "quantity": 2,
+            "unit_price": 8.99,
+            "total_price": 17.98
+          },
+          {
+            "product_id": "1b1a7ce4-285c-41d5-8efa-ffa1f4ec6267",
+            "product_name": "Cheeseburger",
+            "quantity": 1,
+            "unit_price": 9.99,
+            "total_price": 9.99
+          }
+        ],
+        "subtotal": 27.97,
+        "tax": 2.2376,
+        "total": 30.2076,
+        "payment_method": "card",
+        "status": "completed",
+        "timestamp": "2026-02-16T10:16:46.705595Z"
+      }
+    },
+    {
+      "test_name": "Get Recent Orders",
+      "method": "GET",
+      "endpoint": "orders",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_time": 0.108878,
+      "url": "https://design-rebuild-4.preview.emergentagent.com/api/orders",
+      "response_data": [
+        {
+          "id": "c8250f31-0146-4161-b999-e9b4a270a7b7",
+          "order_number": "ORD-A3E2B832",
+          "items": [
+            {
+              "product_id": "f828db74-41a9-46f6-9ae1-c7d09ba8b747",
+              "product_name": "Classic Burger",
+              "quantity": 2,
+              "unit_price": 8.99,
+              "total_price": 17.98
+            },
+            {
+              "product_id": "1b1a7ce4-285c-41d5-8efa-ffa1f4ec6267",
+              "product_name": "Cheeseburger",
+              "quantity": 1,
+              "unit_price": 9.99,
+              "total_price": 9.99
+            }
+          ],
+          "subtotal": 27.97,
+          "tax": 2.2376,
+          "total": 30.2076,
+          "payment_method": "card",
+          "status": "completed",
+          "timestamp": "2026-02-16T10:16:46.705595Z"
+        },
+        {
+          "id": "eac0a3f1-1936-4dac-a981-de040b8c650f",
+          "order_number": "ORD-A105B3AC",
+          "items": [
+            {
+              "product_id": "f828db74-41a9-46f6-9ae1-c7d09ba8b747",
+              "product_name": "Classic Burger",
+              "quantity": 1,
+              "unit_price": 8.99,
+              "total_price": 8.99
+            },
+            {
+              "product_id": "1b1a7ce4-285c-41d5-8efa-ffa1f4ec6267",
+              "product_name": "Cheeseburger",
+              "quantity": 1,
+              "unit_price": 9.99,
+              "total_price": 9.99
+            },
+            {
+              "product_id": "31d0fbde-134c-4a38-9b78-fc09441fe0a3",
+              "product_name": "Veggie Burger",
+              "quantity": 1,
+              "unit_price": 8.49,
+              "total_price": 8.49
+            }
+          ],
+          "subtotal": 27.47,
+          "tax": 2.1976,
+          "total": 29.6676,
+          "payment_method": "card",
+          "status": "completed",
+          "timestamp": "2026-02-16T10:13:47.517536Z"
+        }
+      ]
+    },
+    {
+      "test_name": "Get Products for Tax Test",
+      "method": "GET",
+      "endpoint": "products",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_time": 0.114738,
+      "url": "https://design-rebuild-4.preview.emergentagent.com/api/products",
+      "response_data": [
+        {
+          "id": "f828db74-41a9-46f6-9ae1-c7d09ba8b747",
+          "name": "Classic Burger",
+          "description": "Beef patty with lettuce, tomato, and cheese",
+          "price": 8.99,
+          "category_id": "9ae8d6a7-f88f-490a-9980-f9bed93f0147",
+          "image_url": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwxfHxidXJnZXJ8ZW58MHx8fHwxNzcxMjM2MzQ3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "1b1a7ce4-285c-41d5-8efa-ffa1f4ec6267",
+          "name": "Cheeseburger",
+          "description": "Double cheese with special sauce",
+          "price": 9.99,
+          "category_id": "9ae8d6a7-f88f-490a-9980-f9bed93f0147",
+          "image_url": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwzfHxidXJnZXJ8ZW58MHx8fHwxNzcxMjM2MzQ3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "31d0fbde-134c-4a38-9b78-fc09441fe0a3",
+          "name": "Veggie Burger",
+          "description": "Plant-based patty with fresh vegetables",
+          "price": 8.49,
+          "category_id": "9ae8d6a7-f88f-490a-9980-f9bed93f0147",
+          "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHw0fHxidXJnZXJ8ZW58MHx8fHwxNzcxMjM2MzQ3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "b0ea552c-8b33-4f5e-8bd7-1ca9bad0752d",
+          "name": "Chicken Sandwich",
+          "description": "Crispy chicken with mayo and pickles",
+          "price": 7.99,
+          "category_id": "9ae8d6a7-f88f-490a-9980-f9bed93f0147",
+          "image_url": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwyfHxidXJnZXJ8ZW58MHx8fHwxNzcxMjM2MzQ3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "f1da9500-1d51-4a49-8dd2-2ff5df3d4f40",
+          "name": "French Fries",
+          "description": "Crispy golden fries with sea salt",
+          "price": 3.99,
+          "category_id": "9ae8d6a7-f88f-490a-9980-f9bed93f0147",
+          "image_url": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwxfHxidXJnZXJ8ZW58MHx8fHwxNzcxMjM2MzQ3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "dc9e3723-9c58-420b-a506-d669dffe25d7",
+          "name": "Premium Coffee",
+          "description": "Freshly brewed arabica coffee",
+          "price": 3.49,
+          "category_id": "059642d5-06ce-499f-8d9c-e27a59b2e76b",
+          "image_url": "https://images.unsplash.com/photo-1511920170033-f8396924c348?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHw0fHxjb2ZmZWV8ZW58MHx8fHwxNzcxMjM2MzUwfDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "3ba26486-dc86-49ad-b001-98b4b02b0102",
+          "name": "Latte",
+          "description": "Espresso with steamed milk",
+          "price": 4.49,
+          "category_id": "059642d5-06ce-499f-8d9c-e27a59b2e76b",
+          "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwyfHxjb2ZmZWV8ZW58MHx8fHwxNzcxMjM2MzUwfDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "cd6bec7a-e9c3-4ee8-953a-aaa9b310c956",
+          "name": "Cola",
+          "description": "Classic carbonated soft drink",
+          "price": 2.49,
+          "category_id": "059642d5-06ce-499f-8d9c-e27a59b2e76b",
+          "image_url": "https://images.unsplash.com/photo-1625740822008-e45abf4e01d5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwyfHxzb2Z0JTIwZHJpbmtzfGVufDB8fHx8MTc3MTIzNjM3MXww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "d47abb59-be84-450e-a3d6-a7b9b5aa69cf",
+          "name": "Orange Juice",
+          "description": "Freshly squeezed orange juice",
+          "price": 3.99,
+          "category_id": "059642d5-06ce-499f-8d9c-e27a59b2e76b",
+          "image_url": "https://images.unsplash.com/photo-1527960471264-932f39eb5846?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwxfHxzb2Z0JTIwZHJpbmtzfGVufDB8fHx8MTc3MTIzNjM3MXww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "62107edb-0702-448d-9862-bdc2f3ed8669",
+          "name": "Iced Tea",
+          "description": "Refreshing lemon iced tea",
+          "price": 2.99,
+          "category_id": "059642d5-06ce-499f-8d9c-e27a59b2e76b",
+          "image_url": "https://images.unsplash.com/photo-1511920170033-f8396924c348?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHw0fHxjb2ZmZWV8ZW58MHx8fHwxNzcxMjM2MzUwfDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "5f6a55cf-2629-4871-82a2-8a58285ce4ad",
+          "name": "Potato Chips",
+          "description": "Classic salted potato chips",
+          "price": 2.49,
+          "category_id": "979a562e-1753-43e8-acfa-9c9319635d31",
+          "image_url": "https://images.unsplash.com/photo-1599490659213-e2b9527bd087?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODR8MHwxfHNlYXJjaHwyfHxjaGlwc3xlbnwwfHx8fDE3NzEyMzYzNTR8MA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "828cb703-f82f-457d-b19c-0cb1e202e5a0",
+          "name": "Tortilla Chips",
+          "description": "Crispy corn tortilla chips",
+          "price": 2.99,
+          "category_id": "979a562e-1753-43e8-acfa-9c9319635d31",
+          "image_url": "https://images.unsplash.com/photo-1613919113640-25732ec5e61f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODR8MHwxfHNlYXJjaHwxfHxjaGlwc3xlbnwwfHx8fDE3NzEyMzYzNTR8MA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "b9f4e549-76d7-4644-b7eb-188cedca22aa",
+          "name": "Cheese Puffs",
+          "description": "Cheesy flavored snack puffs",
+          "price": 2.29,
+          "category_id": "979a562e-1753-43e8-acfa-9c9319635d31",
+          "image_url": "https://images.unsplash.com/photo-1617102738820-bee2545405fd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODR8MHwxfHNlYXJjaHwzfHxjaGlwc3xlbnwwfHx8fDE3NzEyMzYzNTR8MA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "e4a55575-b76c-4c0e-a693-71cd8e30f230",
+          "name": "Candy Bar",
+          "description": "Chocolate and caramel candy bar",
+          "price": 1.99,
+          "category_id": "979a562e-1753-43e8-acfa-9c9319635d31",
+          "image_url": "https://images.unsplash.com/photo-1599490659213-e2b9527bd087?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODR8MHwxfHNlYXJjaHwyfHxjaGlwc3xlbnwwfHx8fDE3NzEyMzYzNTR8MA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "064f20db-2c01-491a-bff6-fa6aadf5a215",
+          "name": "Wireless Headphones",
+          "description": "Bluetooth over-ear headphones",
+          "price": 49.99,
+          "category_id": "f60621b1-8fa2-43a5-9730-be90721cd3d8",
+          "image_url": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwzfHxoZWFkcGhvbmVzfGVufDB8fHx8MTc3MTIzNjM1OHww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "3209ff4e-9ade-4b96-b183-6f67b8ba83ac",
+          "name": "Earbuds",
+          "description": "Compact wireless earbuds",
+          "price": 29.99,
+          "category_id": "f60621b1-8fa2-43a5-9730-be90721cd3d8",
+          "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwxfHxoZWFkcGhvbmVzfGVufDB8fHx8MTc3MTIzNjM1OHww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "21a2325e-4ee7-485d-95a0-e3a3ed16e730",
+          "name": "Phone Charger",
+          "description": "Fast charging USB-C cable",
+          "price": 14.99,
+          "category_id": "f60621b1-8fa2-43a5-9730-be90721cd3d8",
+          "image_url": "https://images.unsplash.com/photo-1725304382197-663ae3864750?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwzfHxwaG9uZSUyMGNoYXJnZXJ8ZW58MHx8fHwxNzcxMjM2Mzc1fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "28c35a93-7853-4e6c-9cf5-ab195abc394f",
+          "name": "Portable Speaker",
+          "description": "Bluetooth portable speaker",
+          "price": 39.99,
+          "category_id": "f60621b1-8fa2-43a5-9730-be90721cd3d8",
+          "image_url": "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwyfHxoZWFkcGhvbmVzfGVufDB8fHx8MTc3MTIzNjM1OHww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "0090ad89-f23d-4c94-b624-ec35222a65b5",
+          "name": "Hand Sanitizer",
+          "description": "Antibacterial hand sanitizer gel",
+          "price": 3.99,
+          "category_id": "8cd80295-6a69-472a-a6cf-4c30c46ce9d3",
+          "image_url": "https://images.unsplash.com/photo-1622866027662-14e3c5ee67e7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwyfHx0b2lsZXRyaWVzfGVufDB8fHx8MTc3MTIzNjM2M3ww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "8c6eaa9f-07f4-4943-8d49-1ba86a6e8b8a",
+          "name": "Toothbrush Kit",
+          "description": "Travel toothbrush with toothpaste",
+          "price": 5.99,
+          "category_id": "8cd80295-6a69-472a-a6cf-4c30c46ce9d3",
+          "image_url": "https://images.unsplash.com/photo-1603990103103-baf3ada7af1c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwxfHx0b2lsZXRyaWVzfGVufDB8fHx8MTc3MTIzNjM2M3ww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "f90fdef8-0bde-43e9-bf09-63204008ed15",
+          "name": "Face Wipes",
+          "description": "Refreshing cleansing wipes",
+          "price": 4.49,
+          "category_id": "8cd80295-6a69-472a-a6cf-4c30c46ce9d3",
+          "image_url": "https://images.unsplash.com/photo-1622866027662-14e3c5ee67e7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwyfHx0b2lsZXRyaWVzfGVufDB8fHx8MTc3MTIzNjM2M3ww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "0e204fe7-2bf3-4c64-ae27-a1be4c5898bf",
+          "name": "Deodorant",
+          "description": "24-hour protection deodorant",
+          "price": 6.99,
+          "category_id": "8cd80295-6a69-472a-a6cf-4c30c46ce9d3",
+          "image_url": "https://images.unsplash.com/photo-1603990103103-baf3ada7af1c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwxfHx0b2lsZXRyaWVzfGVufDB8fHx8MTc3MTIzNjM2M3ww&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "f1e652d0-d99d-442f-9905-c7e655395198",
+          "name": "Croissant",
+          "description": "Buttery flaky croissant",
+          "price": 3.49,
+          "category_id": "b79d498d-e49f-4ffe-a098-9508d3999408",
+          "image_url": "https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwzfHxwYXN0cnl8ZW58MHx8fHwxNzcxMjM2MzY3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "39151054-faa2-4575-a14d-734a774208a7",
+          "name": "Blueberry Muffin",
+          "description": "Fresh baked blueberry muffin",
+          "price": 2.99,
+          "category_id": "b79d498d-e49f-4ffe-a098-9508d3999408",
+          "image_url": "https://images.unsplash.com/photo-1620980776848-84ac10194945?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHw0fHxwYXN0cnl8ZW58MHx8fHwxNzcxMjM2MzY3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "40710e9b-8d8f-403f-934f-e406004d46ea",
+          "name": "Bagel",
+          "description": "Plain bagel with cream cheese",
+          "price": 3.99,
+          "category_id": "b79d498d-e49f-4ffe-a098-9508d3999408",
+          "image_url": "https://images.unsplash.com/photo-1623334044303-241021148842?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwxfHxwYXN0cnl8ZW58MHx8fHwxNzcxMjM2MzY3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        },
+        {
+          "id": "f72273e5-43c3-4011-bde4-fb08f597741b",
+          "name": "Danish Pastry",
+          "description": "Sweet fruit-filled danish",
+          "price": 3.29,
+          "category_id": "b79d498d-e49f-4ffe-a098-9508d3999408",
+          "image_url": "https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwzfHxwYXN0cnl8ZW58MHx8fHwxNzcxMjM2MzY3fDA&ixlib=rb-4.1.0&q=85",
+          "in_stock": true,
+          "active": true
+        }
+      ]
+    },
+    {
+      "test_name": "Tax Calculation Test",
+      "method": "POST",
+      "endpoint": "orders",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_time": 0.109516,
+      "url": "https://design-rebuild-4.preview.emergentagent.com/api/orders",
+      "response_data": {
+        "id": "5ab38fb3-ffa9-4991-a4eb-f9040f53cc69",
+        "order_number": "ORD-C629E60E",
+        "items": [
+          {
+            "product_id": "f828db74-41a9-46f6-9ae1-c7d09ba8b747",
+            "product_name": "Classic Burger",
+            "quantity": 2,
+            "unit_price": 8.99,
+            "total_price": 17.98
+          }
+        ],
+        "subtotal": 17.98,
+        "tax": 1.4384000000000001,
+        "total": 19.418400000000002,
+        "payment_method": "cash",
+        "status": "completed",
+        "timestamp": "2026-02-16T10:16:47.156688Z"
+      }
+    }
+  ]
+}

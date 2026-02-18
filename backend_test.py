@@ -3,9 +3,13 @@ import requests
 import sys
 import json
 from datetime import datetime
+import os
+from pathlib import Path
 
 class KioskAPITester:
-    def __init__(self, base_url="https://design-rebuild-4.preview.emergentagent.com"):
+    def __init__(self, base_url=None):
+        if base_url is None:
+            base_url = os.environ.get("BACKEND_BASE_URL", "http://127.0.0.1:8000")
         self.base_url = base_url
         self.api_url = f"{base_url}/api"
         self.tests_run = 0
@@ -302,7 +306,9 @@ def main():
     print(f"Success Rate: {(tester.tests_passed/tester.tests_run*100):.1f}%")
     
     # Save detailed results to JSON
-    results_file = f"/app/test_reports/backend_test_results_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+    reports_dir = Path(__file__).resolve().parent / "test_reports"
+    reports_dir.mkdir(parents=True, exist_ok=True)
+    results_file = reports_dir / f"backend_test_results_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
     with open(results_file, 'w') as f:
         json.dump({
             "timestamp": datetime.now().isoformat(),

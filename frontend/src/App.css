@@ -3,6 +3,22 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
 }
 
+html {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1600px) {
+  html {
+    font-size: 15px;
+  }
+}
+
 html, body, #root {
   height: 100%;
   margin: 0;
@@ -98,4 +114,37 @@ a,
 input,
 textarea {
   touch-action: manipulation;
+}
+
+@media print {
+  body * {
+    visibility: hidden !important;
+  }
+
+  #receipt,
+  #receipt * {
+    visibility: visible !important;
+  }
+
+  #receipt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 24px;
+    background: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  @page {
+    margin: 12mm;
+  }
 }

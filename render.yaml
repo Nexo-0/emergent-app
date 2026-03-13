@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: emergent-app-backend
+    runtime: python
+    repo: https://github.com/Nexo-0/emergent-app.git
+    rootDir: backend
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn server:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health/connectors
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8
+      - key: DB_NAME
+        sync: false
+      - key: MONGO_URL
+        sync: false
+      - key: CORS_ORIGINS
+        sync: false
